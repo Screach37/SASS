@@ -1,0 +1,37 @@
+// body{
+//     background-color: #c1c1c1;
+// }
+@import "mixins";
+@import "btn";
+html{
+    height: 100vh;
+    @include coverImage("./images/cover.jpg");
+}
+
+body{
+    h1{
+        color: #F3B431;
+        text-align: center;
+        margin-top: 5%;
+        font-size: 3rem;
+    }
+    p{
+        color: #EAF0F1;
+         text-align: center;
+         font-size: 2rem;
+    }
+}
+
+.container{
+    text-align: center;
+}
+
+.btn-youtube{
+    @extend %btn;
+    background-color: red;
+}
+
+.btn-linkedin{
+    @extend %btn;
+    background-color: rgb(18, 125, 197);
+}
